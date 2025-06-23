@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/697cc3af12.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header part -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoPritesh.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="opnemenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Pritesh</span> <br> From Gujarat,India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about part -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I turn complex ideas into clean, user-friendly web apps using HTML, CSS, JavaScript, React.js
+                        , Tailwind CSS, Bootstrap. I'm always learning and exploring new
+                        tools to stay updated in frontend development.</p>
+
+                    <div class="tub-title">
+                        <div class="tub-links activie-link" onclick="opentub('skills')">Skills</div>
+                        <div class="tub-links" onclick="opentub('expe')">Projects</div>
+                        <div class="tub-links" onclick="opentub('edu')">Education</div>
+                    </div>
+                    <div class="tub-contents active-tub" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Building functional, fast, and scalable websites</li>
+                            <li><span>Web Interface Design</span><br>Designing responsive and modern layouts for
+                                websites and web applications</li>
+                            <li><span>UI/UX Design</span><br>Creating intuitive and user-friendly interfaces for web and
+                                mobile apps</li>
+                        </ul>
+                    </div>
+                    <div class="tub-contents" id="expe">
+                        <ul>
+                            <li><span>2025</span><br>Personal Portfolio Website <br><a href="#portfolio">Link</a></li>
+                            <li><span>2025</span><br>Grilli Restaurant Website <br><a href="#portfolio">Link</a></li>
+                            <li><span>2025</span><br>AI Image Generator <br><a href="#portfolio">Link</a></li>
+                        </ul>
+                    </div>
+                    <div class="tub-contents" id="edu">
+                        <ul>
+                            <li><span>2023-27</span>(Current)<br>BCA - Asia Pacific BCA College,Ahmedabad</li>
+                            <li><span>2022-23</span><br>12th - Swaminarayan Higher Secondary School, Lathidad</li>
+                            <li><span>2020-21</span><br>10th - Swaminarayan Secondary School, Lathidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------- Services ----------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Unique designs that match your brand and goals.Optimized for all screen sizes for a smooth
+                        browsing experience.Websites built to rank well on Google.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> Crafting visually appealing and consistent interfaces that align with your brand.Designing
+                        seamless user journeys for easy and enjoyable interactions.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Modern Frontend</h2>
+                    <p>Skilled in modern frontend tools like VS Code, Chrome DevTools, Git, and npm. Experienced with
+                        Vite, Webpack, Sass, Tailwind CSS, Postman for API testing, and deploying via Netlify and GitHub
+                        Pages.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A personal portfolio showcasing my development skills, projects, live demos, and a contact
+                            form for potential clients or employers.</p>
+                        <a href="https://pritesh-makwana-15.github.io/portfolio-webpage/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Grilli Restaurant Website</h3>
+                        <p>Developed a dark-themed responsive website with booking and testimonial sections, using
+                            modern UI/UX, CSS Flexbox/Grid, and interactive features.</p>
+                        <a href="https://pritesh-makwana-15.github.io/Grilli-Restaurant-Website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>AI Image Generator</h3>
+                        <p>Created a responsive AI image generator using HTML, CSS, JS, and Hugging Face API with
+                            real-time rendering, async integration, error handling, and image download.</p>
+                        <a href="https://pritesh-makwana-15.github.io/-AI-Image-Generator/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------contact--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> contact@email.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/makwanapritesh"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pritesh_makwana_15/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/pritesh-makwana-15/website-project.git"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.threads.com/@pritesh_makwana_15"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="images/resume.pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" placeholder="your message" rows="6"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©pritesh. Made with <i class="fas fa-heart"></i> by Pritesh
+                Makwana</p>
+        </div>
+
+        <script>
+
+            var tublinks = document.getElementsByClassName("tub-links");
+            var tubcontents = document.getElementsByClassName("tub-contents");
+
+            function opentub(tubname) {
+                for (tublink of tublinks) {
+                    tublink.classList.remove("activie-link");
+                }
+                for (tubcontent of tubcontents) {
+                    tubcontent.classList.remove("active-tub");
+                }
+                event.currentTarget.classList.add("activie-link");
+                document.getElementById(tubname).classList.add("active-tub");
+            }
+
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function opnemenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
